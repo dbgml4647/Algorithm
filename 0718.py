@@ -1,16 +1,18 @@
-#26  Turn to English  
+#27 making a dictionary
 
-planet = {
-    "수성" : "Mercury",
-    "금성" : "Venus",
-    "지구" : "Earth",
-    "화성" : "Mars",
-    "목성" : "Jupiter",
-    "토성" : "Saturn",
-    "천왕성" : "Uranus",
-    "해왕성" : "Neptune"
 
-}
+dic = {}
+name =[]
+number = []
 
-str = input()
-print(planet.get(str))
+name = input()
+number =input()
+
+final_name = name.split(" ")
+final_number = number.split(" ")
+
+dic.update({final_name[0]:final_number[0]})
+dic.update({final_name[1]:final_number[1]})
+
+print(dic)
+#Debug
