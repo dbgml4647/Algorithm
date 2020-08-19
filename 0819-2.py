@@ -1,9 +1,8 @@
-#find name
+# replace method
 
-namelist= input().split(' ')
+text = input()
+change_text= text.replace("q", "e")
 
-findname = input()
+print(change_text)
 
-print(findname,"(이)가 총",namelist.count(findname),"표로 당선!")
-
-#print(namelist[2])
+#show error
