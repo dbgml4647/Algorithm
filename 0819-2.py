@@ -1,8 +1,15 @@
-# replace method
+# 38
 
-text = input()
-change_text= text.replace("q", "e")
+grade = input().split(' ')
+grade.sort()
 
-print(change_text)
 
-#show error
+long = len(grade)
+first = grade.count(grade[0])
+secondIndex = long-first -1
+second = grade.count(grade[secondIndex])
+
+thirdIndex = secondIndex-second
+third = grade.count(grade[thirdIndex])
+
+print(first+second+third)
